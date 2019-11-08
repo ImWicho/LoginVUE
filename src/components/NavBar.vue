@@ -17,9 +17,9 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/" class="nav-link">Home</router-link>
-            </li>
+            </li> -->
           </ul>
           <ul class="navbar-nav d-none d-md-block">
             <li v-if="!$auth.isAuthenticated && !$auth.loading" class="nav-item">
@@ -46,9 +46,9 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-header">{{ $auth.user.name }}</div>
-                <router-link to="/profile" class="dropdown-item dropdown-profile">
+                <!-- <router-link to="/profile" class="dropdown-item dropdown-profile">
                   <font-awesome-icon class="mr-3" icon="user" />Profile
-                </router-link>
+                </router-link> -->
                 <a id="qsLogoutBtn" href="#" class="dropdown-item" @click.prevent="logout">
                   <font-awesome-icon class="mr-3" icon="power-off" />Log out
                 </a>
